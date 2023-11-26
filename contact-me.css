@@ -1,0 +1,24 @@
+.invalid {
+    border: 1px solid red;
+    background-color: #ffdddd;
+}
+
+input:invalid {
+    border: 1px red;
+}
+
+input:valid {
+    border: 1px solid forestgreen;
+}
+
+.hidden {
+    display: none;
+}
+
+input[type=text] {
+    box-shadow: 0 0 3px black;
+  }
+
+input[type=email] {
+    box-shadow: 0 0 3px black;
+}

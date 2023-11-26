@@ -2,9 +2,133 @@
 <html>
   <head>
     <title>Contact Me</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="contact-me.css" />
   </head>
 
   <body>
-    <!-- TODO -->
+    <div class="container">
+      <h1>Contact Me</h1>
+      <form id="connect-form" action="">
+        <div class="form-group">
+          <label for="first-name">First Name</label>
+          <input
+            id="first-name"
+            class="form-control validate-input"
+            type="text"
+            name="first-name"
+            minlength="3"
+            required
+          />
+          <small class="error" aria-live="polite"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="last-name">Last Name</label>
+          <input
+            id="last-name"
+            class="form-control validate-input"
+            type="text"
+            name="last-name"
+            minlength="3"
+            required
+          />
+          <small class="error" aria-live="polite"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            id="email"
+            class="form-control validate-input"
+            type="email"
+            name="email"
+            required
+          />
+          <small class="error" aria-live="polite"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="kind">Reason for contacting:</label>
+          <select class="form-control" name="kind" id="contact-kind">
+            <option value="choose" selected="selected" disabled>
+              Choose one
+            </option>
+            <option value="JobOpportunity">Job Opportunity</option>
+            <option value="TalkCode">Talk Code</option>
+          </select>
+          <small class="error" aria-live="polite"></small>
+        </div>
+
+        <div class="form-group hidden">
+          <label for="job-title">Job Title</label>
+          <input
+            id="job-title"
+            class="form-control validate-input"
+            type="text"
+            name="job-title"
+          />
+          <small class="error" aria-live="polite"></small>
+        </div>
+
+        <div class="form-group hidden">
+          <label for="company-website">Company Website</label>
+          <input
+            id="company-website"
+            class="form-control validate-input"
+            type="url"
+            name="company-website"
+          />
+          <small class="error" aria-live="polite"></small>
+        </div>
+
+        <!--div class="form-group hidden">
+          <label for="coding-language">Coding Language</label>
+          <input
+            id="coding-language"
+            class="form-control validate-input"
+            type="text"
+            name="coding-language"
+          />
+          <small class="error" aria-live="polite"></small>
+        </div-->
+
+        <div class="form-group hidden">
+          <label for="coding-language">Language Options:</label>
+          <select name="coding-language" id="coding-language">
+            <option value="default">Choose One</option>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="javascript">JavaScript</option>
+            <option value="python">Python</option>
+          </select>
+          <br><br>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <input 
+            id="message" 
+            class="form-control validate-input"
+            type="text" 
+            name="message"
+            minlength="10"
+            required
+          />
+          <small class="error" aria-live="polite"></small>
+        </div>
+
+        <div class="form-group">
+          <input class="btn btn-primary" type="submit" value="Sign up" />
+        </div>
+      </form>
+    </div>
+
+    <script src="contact-me.js"></script>
   </body>
 </html>
